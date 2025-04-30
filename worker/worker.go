@@ -26,7 +26,7 @@ type worker struct {
 
 	current           *api.GetSessionResponse
 	outsidePlayers    sync.Map
-	firstCoordSkipped sync.Map
+	firstCoord        sync.Map
 }
 
 // alliedTeams defines the teams considered as Allied factions
@@ -71,6 +71,7 @@ func (w *worker) Run(ctx context.Context) {
 	go w.pollSession(ctx)
 	go w.pollPlayers(ctx)
 	go w.punishPlayers(ctx)
+	go w.cleanupStalePlayers(ctx) // Add cleanup routine
 }
 
 func (w *worker) populateSession(ctx context.Context) error {
@@ -190,18 +191,30 @@ func (w *worker) pollPlayers(ctx context.Context) {
 }
 
 func (w *worker) checkPlayer(ctx context.Context, p api.GetPlayerResponse) {
-	// If player is not spawned, reset first coordinate tracking and return
-	if !p.Position.IsSpawned() {
-		w.firstCoordSkipped.Delete(p.Id)
-		w.outsidePlayers.Delete(p.Id)
-		return
-	}
+// Skip players who are not spawned or have invalid position (0,0,0)
+    	if !p.Position.IsSpawned() || (p.Position.X == 0 && p.Position.Y == 0 && p.Position.Z == 0) {
+        	w.firstCoord.Delete(p.Id)
+        	w.outsidePlayers.Delete(p.Id)
+        	return
+    	}
 
-	// Check if first coordinate has been skipped
-	if _, ok := w.firstCoordSkipped.Load(p.Id); !ok {
-		w.firstCoordSkipped.Store(p.Id, true)
-		return
-	}
+	// Check if we have a stored first coordinate
+    	storedCoord, ok := w.firstCoord.Load(p.Id)
+    	if !ok {
+        	// No stored coordinate: store the current position as the first coordinate
+        	w.firstCoord.Store(p.Id, p.Position)
+        	return
+   	 }
+
+	// Skip if the current position matches the stored first coordinate
+   	 if storedCoord != nil {
+        	stored := storedCoord.(api.WorldPosition)
+        	if stored.X == p.Position.X && stored.Y == p.Position.Y && stored.Z == p.Position.Z {
+            		return
+        	}
+        	// Player has moved, clear the stored coordinate
+        	w.firstCoord.Store(p.Id, nil)
+   	 }
 
 	// Calculate player's grid position
 	g := p.Position.Grid(w.current)
@@ -228,6 +241,8 @@ func (w *worker) checkPlayer(ctx context.Context, p api.GetPlayerResponse) {
 	if _, ok := w.outsidePlayers.Load(p.Id); ok {
 		return
 	}
+
+	// Flag the player as outside and send a warning
 	w.outsidePlayers.Store(p.Id, time.Now())
 	w.l.Info("player-outside-fence", "player", p.Name, "grid", g)
 	err := w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
@@ -245,4 +260,42 @@ func (w *worker) applicableFences(f []data.Fence) (v []data.Fence) {
 		}
 	}
 	return
+}
+
+func (w *worker) cleanupStalePlayers(ctx context.Context) {
+    ticker := time.NewTicker(5 * time.Minute)
+    defer ticker.Stop()
+    for {
+        select {
+        case <-ctx.Done():
+            return
+        case <-ticker.C:
+            // Fetch current players
+            var currentPlayers []string
+            err := w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
+                players, err := c.Players(ctx)
+                if err != nil {
+                    return err
+                }
+                for _, p := range players.Players {
+                    currentPlayers = append(currentPlayers, p.Id)
+                }
+                return nil
+            })
+            if err != nil {
+                w.l.Error("cleanup-stale-players", "error", err)
+                continue
+            }
+
+            // Remove stale entries from firstCoord and outsidePlayers
+            w.firstCoord.Range(func(k, _ interface{}) bool {
+                id := k.(string)
+                if !slices.Contains(currentPlayers, id) {
+                    w.firstCoord.Delete(id)
+                    w.outsidePlayers.Delete(id)
+                }
+                return true
+            })
+        }
+    }
 }
