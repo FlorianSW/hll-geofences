@@ -1,6 +1,6 @@
 Servers:
     - Host:
-      Port:
+      Port: 
       Password:
       PunishAfterSeconds: 10
       AxisFence:
@@ -515,7 +515,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -528,7 +528,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -541,7 +541,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -554,7 +554,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -567,7 +567,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -580,7 +580,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -593,7 +593,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -606,7 +606,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -619,7 +619,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -632,7 +632,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -645,7 +645,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -658,7 +658,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -671,7 +671,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -684,7 +684,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -697,7 +697,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -710,7 +710,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -723,7 +723,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -736,7 +736,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -749,7 +749,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -762,7 +762,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -775,7 +775,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -788,7 +788,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -801,7 +801,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -814,7 +814,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -827,7 +827,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -840,7 +840,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -853,7 +853,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -866,7 +866,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -879,7 +879,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -892,7 +892,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -905,7 +905,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -918,7 +918,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -931,7 +931,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -944,7 +944,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -957,7 +957,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -970,7 +970,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -983,7 +983,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -996,7 +996,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -1009,7 +1009,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -1022,7 +1022,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -1035,7 +1035,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -1048,7 +1048,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2784,7 +2784,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2797,7 +2797,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2810,7 +2810,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2823,7 +2823,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2836,7 +2836,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2849,7 +2849,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2862,7 +2862,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2875,7 +2875,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2888,7 +2888,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2901,7 +2901,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2914,7 +2914,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2927,7 +2927,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2940,7 +2940,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2953,7 +2953,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2966,7 +2966,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2979,7 +2979,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -2992,7 +2992,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3005,7 +3005,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3018,7 +3018,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3031,7 +3031,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3044,7 +3044,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3057,7 +3057,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3070,7 +3070,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3083,7 +3083,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3096,7 +3096,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3109,7 +3109,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3122,7 +3122,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3135,7 +3135,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3148,7 +3148,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3161,7 +3161,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3174,7 +3174,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3187,7 +3187,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3200,7 +3200,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3213,7 +3213,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3226,7 +3226,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3239,7 +3239,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3252,7 +3252,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3265,7 +3265,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3278,7 +3278,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3291,7 +3291,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3304,7 +3304,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
@@ -3317,7 +3317,7 @@ Servers:
                 game_mode:
                     - Warfare
                 map_name:
-                    - CARENTAN,
+                    - CARENTAN
                     - HILL 400
                     - HÜRTGEN FOREST
                     - MORTAIN
