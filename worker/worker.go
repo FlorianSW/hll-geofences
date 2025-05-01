@@ -24,8 +24,23 @@ type worker struct {
 	playerTicker  *time.Ticker
 	punishTicker  *time.Ticker
 
-	current        *api.GetSessionResponse
-	outsidePlayers sync.Map
+	current           *api.GetSessionResponse
+	outsidePlayers    sync.Map
+	firstCoordSkipped sync.Map
+}
+
+// alliedTeams defines the teams considered as Allied factions
+var alliedTeams = []api.PlayerTeam{
+	api.PlayerTeamB8a,
+	api.PlayerTeamDak,
+	api.PlayerTeamGb,
+	api.PlayerTeamRus,
+	api.PlayerTeamUs,
+}
+
+// axisTeams defines the teams considered as Axis factions
+var axisTeams = []api.PlayerTeam{
+	api.PlayerTeamGer,
 }
 
 func NewWorker(l *slog.Logger, pool *rconv2.ConnectionPool, c data.Server) *worker {
@@ -39,10 +54,11 @@ func NewWorker(l *slog.Logger, pool *rconv2.ConnectionPool, c data.Server) *work
 		punishAfterSeconds: time.Duration(punishAfterSeconds) * time.Second,
 		c:                  c,
 
-		sessionTicker:  time.NewTicker(1 * time.Second),
-		playerTicker:   time.NewTicker(500 * time.Millisecond),
-		punishTicker:   time.NewTicker(time.Second),
-		outsidePlayers: sync.Map{},
+		sessionTicker:     time.NewTicker(1 * time.Second),
+		playerTicker:      time.NewTicker(500 * time.Millisecond),
+		punishTicker:      time.NewTicker(time.Second),
+		outsidePlayers:    sync.Map{},
+		firstCoordSkipped: sync.Map{},
 	}
 }
 
@@ -90,15 +106,45 @@ func (w *worker) punishPlayers(ctx context.Context) {
 }
 
 func (w *worker) punishPlayer(ctx context.Context, id string) {
+	var playerName string
+	var grid string
+	// Fetch player info to get name and grid position
 	err := w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
+		players, err := c.Players(ctx)
+		if err != nil {
+			return err
+		}
+		for _, p := range players.Players {
+			if p.Id == id && p.Position.IsSpawned() {
+				playerName = p.Name
+				grid = p.Position.Grid(w.current).String()
+				break
+			}
+		}
+		return nil
+	})
+	if err != nil {
+		w.l.Error("fetch-player-for-punish", "player_id", id, "error", err)
+		return
+	}
+
+	// Punish the player
+	err = w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
 		return c.PunishPlayer(ctx, id, fmt.Sprintf(w.c.PunishMessage(), w.punishAfterSeconds.String()))
 	})
 	if err != nil {
-		w.l.Error("poll-session", "error", err)
+		w.l.Error("punish-player", "player_id", id, "error", err)
+		return
 	}
-	// give the observer time to get the new player position
+
+	// Log the punishment event if player info was found
+	if playerName != "" && grid != "" {
+		w.l.Info("punish-player", "player", playerName, "grid", grid)
+	}
+
 	time.Sleep(5 * time.Second)
 	w.outsidePlayers.Delete(id)
+	w.firstCoordSkipped.Delete(id)
 }
 
 func (w *worker) pollSession(ctx context.Context) {
@@ -137,32 +183,38 @@ func (w *worker) pollPlayers(ctx context.Context) {
 				return nil
 			})
 			if err != nil {
-				w.l.Error("poll-session", "error", err)
+				w.l.Error("poll-players", "error", err)
 			}
 		}
 	}
 }
 
-var (
-	alliedTeams = []api.PlayerTeam{
-		api.PlayerTeamB8a,
-		api.PlayerTeamDak,
-		api.PlayerTeamGb,
-		api.PlayerTeamRus,
-		api.PlayerTeamUs,
-	}
-)
-
 func (w *worker) checkPlayer(ctx context.Context, p api.GetPlayerResponse) {
+	// If player is not spawned, reset first coordinate tracking and return
 	if !p.Position.IsSpawned() {
+		w.firstCoordSkipped.Delete(p.Id)
+		w.outsidePlayers.Delete(p.Id)
 		return
 	}
+
+	// Check if first coordinate has been skipped
+	if _, ok := w.firstCoordSkipped.Load(p.Id); !ok {
+		w.firstCoordSkipped.Store(p.Id, true)
+		return
+	}
+
+	// Calculate player's grid position
 	g := p.Position.Grid(w.current)
+
+	// Determine applicable fences based on team
 	var fences []data.Fence
 	if slices.Contains(alliedTeams, p.Team) {
 		fences = w.alliesFences
-	} else {
+	} else if slices.Contains(axisTeams, p.Team) {
 		fences = w.axisFences
+	} else {
+		// Silently skip players with unknown teams
+		return
 	}
 	if len(fences) == 0 {
 		return
