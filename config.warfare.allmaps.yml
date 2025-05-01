@@ -1,0 +1,4543 @@
+Servers:
+    - Host:
+      Port:
+      Password:
+      PunishAfterSeconds: 10
+      AxisFence:
+        - X: C
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+      AlliesFence:
+        - X: C
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 9
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - DRIEL
+                    - FOY
+                    - REMAGEN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: B
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - CARENTAN,
+                    - HILL 400
+                    - HÜRTGEN FOREST
+                    - MORTAIN
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: J
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: I
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 7
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: A
+          "Y": 8
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - EL ALAMEIN
+                    - OMAHA BEACH
+                    - SAINTE-MÈRE-ÉGLISE
+                    - STALINGRAD
+                    - TOBRUK
+                    - UTAH BEACH
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: C
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: D
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: E
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: F
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: G
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 1
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 2
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 3
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 4
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 5
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 6
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
+        - X: H
+          "Y": 10
+          Condition:
+            Equals:
+                game_mode:
+                    - Warfare
+                map_name:
+                    - ELSENBORN RIDGE
+                    - KHARKOV
+                    - KURSK
+                    - PURPLE HEART LANE
+                    - ST MARIE DU MONT
+            LessThan:
+                player_count: 50
