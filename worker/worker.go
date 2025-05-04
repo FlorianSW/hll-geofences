@@ -163,6 +163,15 @@ func (w *worker) pollPlayers(ctx context.Context) {
 					w.firstCoord.Delete(id)
 					return true
 				})
+				w.outsidePlayers.Range(func(id string, _ outsidePlayer) bool {
+					for _, player := range players.Players {
+						if player.Id == id {
+							return true
+						}
+					}
+					w.outsidePlayers.Delete(id)
+					return true
+				})
 				return nil
 			})
 			if err != nil {
