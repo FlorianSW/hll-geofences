@@ -19,7 +19,12 @@ func main() {
 
 	logger := slog.New(slog.NewTextHandler(os.Stdout, &slog.HandlerOptions{Level: level}))
 
-	c, err := data.NewConfig("./config.yml", logger)
+	configPath := "./config.yml"
+	if path, ok := os.LookupEnv("CONFIG_PATH"); ok {
+		configPath = path
+	}
+
+	c, err := data.NewConfig(configPath, logger)
 	if err != nil {
 		logger.Error("config", err)
 		return
