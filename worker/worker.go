@@ -9,6 +9,7 @@ import (
 	"github.com/floriansw/hll-geofences/sync"
 	"log/slog"
 	"slices"
+	sync2 "sync"
 	"time"
 )
 
@@ -146,13 +147,18 @@ func (w *worker) pollPlayers(ctx context.Context) {
 				continue
 			}
 
+			var wg sync2.WaitGroup
 			err := w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
 				players, err := c.Players(ctx)
 				if err != nil {
 					return err
 				}
+				wg.Add(len(players.Players))
 				for _, player := range players.Players {
-					go w.checkPlayer(ctx, player)
+					go func() {
+						defer wg.Done()
+						w.checkPlayer(ctx, player)
+					}()
 				}
 				w.firstCoord.Range(func(id string, p *api.WorldPosition) bool {
 					for _, player := range players.Players {
@@ -168,6 +174,7 @@ func (w *worker) pollPlayers(ctx context.Context) {
 			if err != nil {
 				w.l.Error("poll-players", "error", err)
 			}
+			wg.Wait()
 		}
 	}
 }
