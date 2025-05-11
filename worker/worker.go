@@ -77,11 +77,26 @@ func (w *worker) Run(ctx context.Context) {
 	go w.punishPlayers(ctx)
 }
 
+func (w *worker) clearSyncMaps() {
+	w.outsidePlayers.Range(func(id string, _ outsidePlayer) bool {
+		w.outsidePlayers.Delete(id)
+		return true
+	})
+	w.firstCoord.Range(func(id string, _ *api.WorldPosition) bool {
+		w.firstCoord.Delete(id)
+		return true
+	})
+}
+
 func (w *worker) populateSession(ctx context.Context) error {
 	return w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
 		si, err := c.SessionInfo(ctx)
 		if err != nil {
 			return err
+		}
+		if w.current != nil && w.current.MapName != si.MapName {
+			w.l.Info("map-changed", "old_map", w.current.MapName, "new_map", si.MapName)
+			w.clearSyncMaps()
 		}
 		w.current = si
 		w.axisFences = w.applicableFences(w.c.AxisFence)
