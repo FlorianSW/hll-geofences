@@ -1,10 +1,6 @@
 package api
 
-type DisplayableCommands struct {
-}
-
-func (c DisplayableCommands) CommandName() string {
-	return "test"
+type GetDisplayableCommands struct {
 }
 
 type GetDisplayableCommandsResponse struct {

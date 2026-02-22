@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-type AdminLog struct {
+type GetAdminLog struct {
 	LogBackTrackTime int32  `json:"logBackTrackTime"`
 	Filters          string `json:"filters"`
 }

@@ -1,5 +1,5 @@
 package api
 
-type MapChange struct {
+type ChangeMap struct {
 	MapName string `json:"mapName"`
 }

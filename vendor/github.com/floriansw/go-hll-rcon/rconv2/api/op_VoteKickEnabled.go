@@ -1,5 +1,5 @@
 package api
 
-type VoteKickEnabled struct {
+type SetVoteKick struct {
 	Enabled bool `json:"Enabled"`
 }

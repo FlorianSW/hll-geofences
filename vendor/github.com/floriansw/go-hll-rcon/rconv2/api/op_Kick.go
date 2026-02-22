@@ -1,6 +1,6 @@
 package api
 
-type Kick struct {
+type KickPlayer struct {
 	Reason   string `json:"Reason"`
 	PlayerId string `json:"PlayerId"`
 }

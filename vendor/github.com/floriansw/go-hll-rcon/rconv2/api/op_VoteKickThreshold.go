@@ -1,5 +1,5 @@
 package api
 
-type VoteKickThreshold struct {
+type SetVoteKickThreshold struct {
 	ThresholdValue string `json:"ThresholdValue"`
 }

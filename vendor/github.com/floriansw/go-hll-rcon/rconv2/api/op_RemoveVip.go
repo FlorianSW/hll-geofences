@@ -1,5 +1,5 @@
 package api
 
-type RemoveTemporaryBan struct {
+type RemoveVip struct {
 	PlayerId string `json:"PlayerId"`
 }

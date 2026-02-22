@@ -1,5 +1,5 @@
 package api
 
-type AutoBalanceThreshold struct {
+type SetAutoBalanceThreshold struct {
 	AutoBalanceThreshold int32 `json:"AutoBalanceThreshold"`
 }

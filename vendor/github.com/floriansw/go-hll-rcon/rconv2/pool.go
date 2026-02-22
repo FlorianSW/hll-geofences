@@ -99,7 +99,6 @@ func IsBrokenHllConnection(err error) bool {
 		(os.IsTimeout(err) ||
 			errors.Is(err, syscall.ECONNRESET) ||
 			errors.Is(err, syscall.ECONNREFUSED) ||
-			errors.Is(err, syscall.ECONNREFUSED) ||
 			errors.Is(err, syscall.EPIPE))
 }
 
@@ -186,7 +185,7 @@ func (p *ConnectionPool) Get(ctx context.Context) (*Connection, error) {
 	p.numOpen++
 	defer p.mu.Unlock()
 
-	nc, err := p.new()
+	nc, err := p.new(ctx)
 	if err != nil {
 		p.numOpen--
 		return nil, err
@@ -213,8 +212,8 @@ func (p *ConnectionPool) WithConnection(ctx context.Context, f func(c *Connectio
 	return nil
 }
 
-func (p *ConnectionPool) new() (*Connection, error) {
-	c, err := newSocket(p.host, p.port, p.pw)
+func (p *ConnectionPool) new(ctx context.Context) (*Connection, error) {
+	c, err := newSocket(ctx, p.host, p.port, p.pw)
 	if err != nil {
 		return nil, err
 	}

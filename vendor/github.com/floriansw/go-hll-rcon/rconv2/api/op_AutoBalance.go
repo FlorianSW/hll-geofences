@@ -1,5 +1,5 @@
 package api
 
-type AutoBalance struct {
+type SetAutoBalance struct {
 	EnableAutoBalance bool `json:"EnableAutoBalance"`
 }

@@ -1,5 +1,5 @@
 package api
 
 type RemoveMapFromSequence struct {
-	Index int32 `json:"index"`
+	Index int32 `json:"Index"`
 }

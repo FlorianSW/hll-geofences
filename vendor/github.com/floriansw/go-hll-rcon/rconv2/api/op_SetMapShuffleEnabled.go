@@ -1,5 +1,5 @@
 package api
 
-type ShuffleMapSequence struct {
+type SetMapShuffleEnabled struct {
 	Enable bool `json:"Enable"`
 }

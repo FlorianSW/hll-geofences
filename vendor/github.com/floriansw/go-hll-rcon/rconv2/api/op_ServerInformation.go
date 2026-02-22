@@ -57,12 +57,12 @@ var (
 	}
 )
 
-type ServerInformation struct {
+type GetServerInformation struct {
 	Name  ServerInformationName `json:"Name"`
 	Value string                `json:"Value"`
 }
 
-func (s ServerInformation) Validate() error {
+func (s GetServerInformation) Validate() error {
 	if slices.Contains(requiresValue, s.Name) && s.Value == "" {
 		return fmt.Errorf("%s command requires a Value", s.Name)
 	}
