@@ -14,9 +14,13 @@ import (
 	"time"
 )
 
+const (
+	magicNumber = uint32(0xDE450508)
+)
+
 var (
 	ErrWriteSentUnequal    = errors.New("write wrote less or more bytes than command is long")
-	ErrReadLengthUnequal   = errors.New("server wrote less bytes than avertised")
+	ErrReadLengthUnequal   = errors.New("server wrote less bytes than advertised")
 	ReconnectTriesExceeded = errors.New("there are no reconnects left")
 )
 
@@ -33,7 +37,7 @@ type socket struct {
 	lastContext *context.Context
 	// TODO Completely the wrong place for that, probably. But, the library does not support sending multiple
 	// commands over the same socket yet, anyway. Hence it doesn't matter, it just needs to go somewhere for now.
-	lastRequestId int
+	lastRequestId uint32
 }
 
 type Request[T, U any] struct {
@@ -207,7 +211,7 @@ func (r *socket) retryableWrite(err error, cmd []byte) error {
 
 func (r *socket) write(cmd []byte) error {
 	data := r.xor(cmd)
-	err := binary.Write(r.con, binary.LittleEndian, []int32{int32(r.lastRequestId), int32(len(data))})
+	err := binary.Write(r.con, binary.LittleEndian, []uint32{magicNumber, r.lastRequestId, uint32(len(data))})
 	if errors.Is(err, syscall.EPIPE) {
 		return r.retryableWrite(err, cmd)
 	} else if err != nil {
@@ -254,12 +258,18 @@ func (r *socket) reconnect(orig error) error {
 }
 
 func (r *socket) read() ([]byte, error) {
-	// each response has a fixed 8-byte header, the first 4 bytes is the response Id assigned by the server
-	// and the next 4 bytes is the content length of the response body
-	// byte format as used in python is: <II
-	// in go's binary encoding this should be reading two unsigned int in a little-endian byte order
-	var responseId, contentLength int32
-	err := binary.Read(r.con, binary.LittleEndian, &responseId)
+	// each response has a fixed 12-byte header, the first 4 bytes is a magic number, followed by the response Id
+	// assigned by the server and the next 4 bytes is the content length of the response body
+	// byte format as used in python is: <III
+	var magic, responseId, contentLength uint32
+	err := binary.Read(r.con, binary.LittleEndian, &magic)
+	if err != nil {
+		return nil, fmt.Errorf("read magic number failed: %w", err)
+	}
+	if magic != magicNumber {
+		return nil, fmt.Errorf("magic number does not match: expected %d to match %d", magic, magicNumber)
+	}
+	err = binary.Read(r.con, binary.LittleEndian, &responseId)
 	if err != nil {
 		return nil, fmt.Errorf("read responseId failed: %w", err)
 	}
