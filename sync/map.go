@@ -23,7 +23,7 @@ func (m *Map[K, V]) Delete(k K) {
 }
 
 func (m *Map[K, V]) Range(f func(k K, v V) bool) {
-	m.m.Range(func(k, v interface{}) bool {
+	m.m.Range(func(k, v any) bool {
 		return f(k.(K), v.(V))
 	})
 }

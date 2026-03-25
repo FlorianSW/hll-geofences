@@ -1,6 +1,6 @@
 module github.com/floriansw/hll-geofences
 
-go 1.24.1
+go 1.26
 
 require (
 	github.com/floriansw/go-hll-rcon v0.0.0-20260222164331-c4a3c2a1b0f4
