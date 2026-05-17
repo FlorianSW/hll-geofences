@@ -1,11 +1,12 @@
 package data
 
 import (
-	"github.com/floriansw/go-hll-rcon/rconv2/api"
-	"gopkg.in/yaml.v3"
 	"log/slog"
 	"os"
 	"slices"
+
+	"github.com/floriansw/go-hll-rcon/rconv2"
+	"gopkg.in/yaml.v3"
 )
 
 type Fence struct {
@@ -15,7 +16,7 @@ type Fence struct {
 	Condition *Condition `yaml:"Condition,omitempty"`
 }
 
-func (f Fence) Includes(w api.Grid) bool {
+func (f Fence) Includes(w rconv2.Grid) bool {
 	if f.X != nil && w.X != *f.X {
 		return false
 	}
@@ -28,7 +29,7 @@ func (f Fence) Includes(w api.Grid) bool {
 	return slices.Contains(f.Numpads, w.Numpad)
 }
 
-func (f Fence) Matches(si *api.GetSessionResponse) bool {
+func (f Fence) Matches(si *rconv2.GetSessionInfoResponse) bool {
 	if f.Condition == nil {
 		return true
 	}
@@ -41,7 +42,7 @@ type Condition struct {
 	GreaterThan map[string]int      `yaml:"GreaterThan,omitempty"`
 }
 
-func (c Condition) Matches(si *api.GetSessionResponse) bool {
+func (c Condition) Matches(si *rconv2.GetSessionInfoResponse) bool {
 	if len(c.Equals) == 0 && len(c.LessThan) == 0 && len(c.GreaterThan) == 0 {
 		return true
 	}
@@ -49,7 +50,7 @@ func (c Condition) Matches(si *api.GetSessionResponse) bool {
 		if k == "map_name" && slices.Contains(v, si.MapName) {
 			continue
 		}
-		if k == "game_mode" && slices.Contains(v, si.GameMode) {
+		if k == "game_mode" && slices.Contains(v, si.GameMode.String()) {
 			continue
 		}
 		return false

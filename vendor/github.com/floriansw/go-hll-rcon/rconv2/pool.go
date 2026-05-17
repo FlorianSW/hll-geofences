@@ -56,10 +56,10 @@ func NewConnectionPool(opts ConnectionPoolOptions) (*ConnectionPool, error) {
 		return nil, errors.New("port must be a positive integer greater than 0 and lower than 65,536")
 	}
 	if toInt(opts.MaxOpenConnections) == 0 {
-		opts.MaxOpenConnections = fromInt(10)
+		opts.MaxOpenConnections = new(10)
 	}
 	if toInt(opts.MaxIdleConnections) == 0 {
-		opts.MaxIdleConnections = fromInt(10)
+		opts.MaxIdleConnections = new(10)
 	}
 	if toInt(opts.MaxIdleConnections) > toInt(opts.MaxOpenConnections) {
 		return nil, errors.New("the MaxIdleConnections cannot exceed MaxOpenConnections")
@@ -209,7 +209,7 @@ func (p *ConnectionPool) WithConnection(ctx context.Context, f func(c *Connectio
 	defer p.Return(c, cerr)
 
 	cerr = f(c)
-	return nil
+	return cerr
 }
 
 func (p *ConnectionPool) new(ctx context.Context) (*Connection, error) {

@@ -1,13 +1,14 @@
 package data_test
 
 import (
-	"github.com/floriansw/go-hll-rcon/rconv2/api"
+	"log/slog"
+	"os"
+
+	"github.com/floriansw/go-hll-rcon/rconv2"
 	"github.com/floriansw/hll-geofences/data"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"
-	"log/slog"
-	"os"
 )
 
 var _ = Describe("Config", func() {
@@ -39,7 +40,7 @@ var _ = Describe("Config", func() {
 					X:       new("G"),
 					Y:       new(4),
 					Numpads: []int{4, 5, 6},
-				}.Includes(api.Grid{X: "H", Y: 1, Numpad: 7})).To(BeFalse())
+				}.Includes(rconv2.Grid{X: "H", Y: 1, Numpad: 7})).To(BeFalse())
 			})
 
 			It("includes fence when direct match", func() {
@@ -47,36 +48,36 @@ var _ = Describe("Config", func() {
 					X:       new("G"),
 					Y:       new(4),
 					Numpads: []int{4, 5, 6},
-				}.Includes(api.Grid{X: "G", Y: 4, Numpad: 5})).To(BeTrue())
+				}.Includes(rconv2.Grid{X: "G", Y: 4, Numpad: 5})).To(BeTrue())
 			})
 
 			It("includes fence when matching whole line X-axis", func() {
 				Expect(data.Fence{
 					X:       new("G"),
 					Numpads: []int{4, 5, 6},
-				}.Includes(api.Grid{X: "G", Y: 8, Numpad: 5})).To(BeTrue())
+				}.Includes(rconv2.Grid{X: "G", Y: 8, Numpad: 5})).To(BeTrue())
 			})
 
 			It("includes fence when matching whole line Y-axis", func() {
 				Expect(data.Fence{
 					Y:       new(5),
 					Numpads: []int{4, 5, 6},
-				}.Includes(api.Grid{X: "A", Y: 5, Numpad: 5})).To(BeTrue())
+				}.Includes(rconv2.Grid{X: "A", Y: 5, Numpad: 5})).To(BeTrue())
 			})
 
 			It("includes fence when no numpad specified", func() {
 				Expect(data.Fence{
 					X: new("G"),
 					Y: new(5),
-				}.Includes(api.Grid{X: "G", Y: 5, Numpad: 7})).To(BeTrue())
+				}.Includes(rconv2.Grid{X: "G", Y: 5, Numpad: 7})).To(BeTrue())
 			})
 		})
 
 		Context("Matches", func() {
-			var si *api.GetSessionResponse
+			var si *rconv2.GetSessionInfoResponse
 
 			BeforeEach(func() {
-				si = &api.GetSessionResponse{
+				si = &rconv2.GetSessionInfoResponse{
 					MapName:     "CARENTAN",
 					GameMode:    "Warfare",
 					PlayerCount: 40,
@@ -91,7 +92,7 @@ var _ = Describe("Config", func() {
 				Expect(data.Fence{Condition: &data.Condition{
 					Equals: map[string][]string{
 						"map_name":  {si.MapName},
-						"game_mode": {si.GameMode},
+						"game_mode": {si.GameMode.String()},
 					},
 				}}.Matches(si)).To(BeTrue())
 			})
@@ -109,7 +110,7 @@ var _ = Describe("Config", func() {
 				Expect(data.Fence{Condition: &data.Condition{
 					Equals: map[string][]string{
 						"map_name":  {"TOBRUK"},
-						"game_mode": {si.GameMode},
+						"game_mode": {si.GameMode.String()},
 					},
 				}}.Matches(si)).To(BeFalse())
 			})

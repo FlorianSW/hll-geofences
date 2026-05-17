@@ -3,13 +3,13 @@ package worker
 import (
 	"context"
 	"fmt"
-	"github.com/floriansw/go-hll-rcon/rconv2"
-	"github.com/floriansw/go-hll-rcon/rconv2/api"
-	"github.com/floriansw/hll-geofences/data"
-	"github.com/floriansw/hll-geofences/sync"
 	"log/slog"
 	"slices"
 	"time"
+
+	"github.com/floriansw/go-hll-rcon/rconv2"
+	"github.com/floriansw/hll-geofences/data"
+	"github.com/floriansw/hll-geofences/sync"
 )
 
 type worker struct {
@@ -24,27 +24,27 @@ type worker struct {
 	playerTicker  *time.Ticker
 	punishTicker  *time.Ticker
 
-	current        *api.GetSessionResponse
+	current        *rconv2.GetSessionInfoResponse
 	outsidePlayers sync.Map[string, outsidePlayer]
-	firstCoord     sync.Map[string, *api.WorldPosition]
+	firstCoord     sync.Map[string, *rconv2.GetPlayersPosition]
 }
 
 type outsidePlayer struct {
 	Name         string
-	LastGrid     api.Grid
+	LastGrid     rconv2.Grid
 	FirstOutside time.Time
 }
 
-var alliedTeams = []api.PlayerTeam{
-	api.PlayerTeamB8a,
-	api.PlayerTeamDak,
-	api.PlayerTeamGb,
-	api.PlayerTeamRus,
-	api.PlayerTeamUs,
+var alliedTeams = []rconv2.GetPlayersTeam{
+	rconv2.GetPlayersTeamB8A,
+	rconv2.GetPlayersTeamDAK,
+	rconv2.GetPlayersTeamCW,
+	rconv2.GetPlayersTeamSOV,
+	rconv2.GetPlayersTeamME,
 }
 
-var axisTeams = []api.PlayerTeam{
-	api.PlayerTeamGer,
+var axisTeams = []rconv2.GetPlayersTeam{
+	rconv2.GetPlayersTeamGER,
 }
 
 func NewWorker(l *slog.Logger, pool *rconv2.ConnectionPool, c data.Server) *worker {
@@ -62,7 +62,7 @@ func NewWorker(l *slog.Logger, pool *rconv2.ConnectionPool, c data.Server) *work
 		playerTicker:   time.NewTicker(500 * time.Millisecond),
 		punishTicker:   time.NewTicker(time.Second),
 		outsidePlayers: sync.Map[string, outsidePlayer]{},
-		firstCoord:     sync.Map[string, *api.WorldPosition]{},
+		firstCoord:     sync.Map[string, *rconv2.GetPlayersPosition]{},
 	}
 }
 
@@ -79,7 +79,7 @@ func (w *worker) Run(ctx context.Context) {
 
 func (w *worker) populateSession(ctx context.Context) error {
 	return w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
-		si, err := c.SessionInfo(ctx)
+		si, err := c.GetSessionInfo(ctx)
 		if err != nil {
 			return err
 		}
@@ -147,14 +147,14 @@ func (w *worker) pollPlayers(ctx context.Context) {
 			}
 
 			err := w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
-				players, err := c.Players(ctx)
+				players, err := c.GetPlayers(ctx)
 				if err != nil {
 					return err
 				}
 				for _, player := range players.Players {
 					go w.checkPlayer(ctx, player)
 				}
-				w.firstCoord.Range(func(id string, p *api.WorldPosition) bool {
+				w.firstCoord.Range(func(id string, p *rconv2.GetPlayersPosition) bool {
 					for _, player := range players.Players {
 						if player.Id == id {
 							return true
@@ -172,8 +172,8 @@ func (w *worker) pollPlayers(ctx context.Context) {
 	}
 }
 
-func (w *worker) checkPlayer(ctx context.Context, p api.GetPlayerResponse) {
-	if !p.Position.IsSpawned() {
+func (w *worker) checkPlayer(ctx context.Context, p rconv2.GetPlayersPlayer) {
+	if !p.Position.ToGetPlayerPosition().IsSpawned() {
 		w.firstCoord.Store(p.Id, nil)
 		return
 	}
@@ -184,7 +184,7 @@ func (w *worker) checkPlayer(ctx context.Context, p api.GetPlayerResponse) {
 	if fp, ok := w.firstCoord.Load(p.Id); !ok {
 		w.firstCoord.Store(p.Id, &p.Position)
 		return
-	} else if fp != nil && p.Position.Equal(*fp) {
+	} else if fp != nil && p.Position.ToGetPlayerPosition().Equal(fp.ToGetPlayerPosition()) {
 		return
 	} else {
 		// the player moved (e.g., spawned somewhere), makes sure we start tracking
@@ -202,7 +202,7 @@ func (w *worker) checkPlayer(ctx context.Context, p api.GetPlayerResponse) {
 		return
 	}
 
-	g := p.Position.Grid(w.current)
+	g := p.Position.ToGetPlayerPosition().Grid(w.current)
 	for _, f := range fences {
 		if f.Includes(g) {
 			w.outsidePlayers.Delete(p.Id)

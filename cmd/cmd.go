@@ -2,13 +2,14 @@ package main
 
 import (
 	"context"
-	"github.com/floriansw/go-hll-rcon/rconv2"
-	"github.com/floriansw/hll-geofences/data"
-	"github.com/floriansw/hll-geofences/worker"
 	"log/slog"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"github.com/floriansw/go-hll-rcon/rconv2"
+	"github.com/floriansw/hll-geofences/data"
+	"github.com/floriansw/hll-geofences/worker"
 )
 
 func main() {
