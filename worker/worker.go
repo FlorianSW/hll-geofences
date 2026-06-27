@@ -146,28 +146,31 @@ func (w *worker) pollPlayers(ctx context.Context) {
 				continue
 			}
 
+			var players *rconv2.GetPlayersResponse
 			err := w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
-				players, err := c.GetPlayers(ctx)
+				var err error
+				players, err = c.GetPlayers(ctx)
 				if err != nil {
 					return err
 				}
-				for _, player := range players.Players {
-					go w.checkPlayer(ctx, player)
-				}
-				w.firstCoord.Range(func(id string, p *rconv2.GetPlayersPosition) bool {
-					for _, player := range players.Players {
-						if player.Id == id {
-							return true
-						}
-					}
-					w.firstCoord.Delete(id)
-					return true
-				})
 				return nil
 			})
 			if err != nil {
 				w.l.Error("poll-players", "error", err)
+				continue
 			}
+			for _, player := range players.Players {
+				go w.checkPlayer(ctx, player)
+			}
+			w.firstCoord.Range(func(id string, p *rconv2.GetPlayersPosition) bool {
+				for _, player := range players.Players {
+					if player.Id == id {
+						return true
+					}
+				}
+				w.firstCoord.Delete(id)
+				return true
+			})
 		}
 	}
 }
@@ -181,16 +184,16 @@ func (w *worker) checkPlayer(ctx context.Context, p rconv2.GetPlayersPlayer) {
 	// If this is the first time we've seen this player, or if it is still the same position (spawn screen e.g.)
 	// ignore them. The game engine returns the position of a random HQ for players first joining the server, which
 	// might trigger an out-of-fence warning when we do not ignore that here.
-	if fp, ok := w.firstCoord.Load(p.Id); !ok {
+	if fp, loaded := w.firstCoord.LoadOrStore(p.Id, &p.Position); !loaded {
 		w.firstCoord.Store(p.Id, &p.Position)
 		return
 	} else if fp != nil && p.Position.ToGetPlayerPosition().Equal(fp.ToGetPlayerPosition()) {
 		return
-	} else {
-		// the player moved (e.g., spawned somewhere), makes sure we start tracking
-		// the position of this player and evaluate them against fences.
-		w.firstCoord.Store(p.Id, nil)
 	}
+
+	// the player moved (e.g., spawned somewhere), makes sure we start tracking
+	// the position of this player and evaluate them against fences.
+	w.firstCoord.Store(p.Id, nil)
 
 	var fences []data.Fence
 	if slices.Contains(alliedTeams, p.Team) {
