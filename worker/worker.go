@@ -86,6 +86,9 @@ func (w *worker) populateSession(ctx context.Context) error {
 		w.current = si
 		w.axisFences = w.applicableFences(w.c.AxisFence)
 		w.alliesFences = w.applicableFences(w.c.AlliesFence)
+		if len(w.alliesFences) == 0 && len(w.axisFences) == 0 {
+			w.l.Debug("no-applicable-fences", "map_name", si.MapName, "game_mode", si.GameMode, "player_count", si.PlayerCount)
+		}
 		return nil
 	})
 }
@@ -176,7 +179,9 @@ func (w *worker) pollPlayers(ctx context.Context) {
 }
 
 func (w *worker) checkPlayer(ctx context.Context, p rconv2.GetPlayersPlayer) {
+	l := w.l.WithGroup("check-player").With("player_id", p.Id, "player_name", p.Name)
 	if !p.Position.ToGetPlayerPosition().IsSpawned() {
+		l.Debug("player-not-spawned")
 		w.firstCoord.Store(p.Id, nil)
 		return
 	}
@@ -185,9 +190,11 @@ func (w *worker) checkPlayer(ctx context.Context, p rconv2.GetPlayersPlayer) {
 	// ignore them. The game engine returns the position of a random HQ for players first joining the server, which
 	// might trigger an out-of-fence warning when we do not ignore that here.
 	if fp, loaded := w.firstCoord.LoadOrStore(p.Id, &p.Position); !loaded {
+		l.Debug("player-first-time")
 		w.firstCoord.Store(p.Id, &p.Position)
 		return
 	} else if fp != nil && p.Position.ToGetPlayerPosition().Equal(fp.ToGetPlayerPosition()) {
+		l.Debug("player-not-loaded")
 		return
 	}
 
@@ -202,29 +209,32 @@ func (w *worker) checkPlayer(ctx context.Context, p rconv2.GetPlayersPlayer) {
 		fences = w.axisFences
 	}
 	if len(fences) == 0 {
+		l.Debug("no-applicable-fences", "team", p.Team, "allied_teams", alliedTeams, "axis_teams", axisTeams)
 		return
 	}
 
 	g := p.Position.ToGetPlayerPosition().Grid(w.current)
 	for _, f := range fences {
 		if f.Includes(g) {
+			l.Debug("player-within-fence", "grid", g.String(), "fence", f)
 			w.outsidePlayers.Delete(p.Id)
 			return
 		}
 	}
 	if o, ok := w.outsidePlayers.Load(p.Id); ok {
+		l.Debug("player-still-outside", "last_grid", o.LastGrid.String(), "grid", g.String(), "first_outside", o.FirstOutside)
 		o.LastGrid = g
 		w.outsidePlayers.Store(p.Id, o)
 		return
 	}
 
 	w.outsidePlayers.Store(p.Id, outsidePlayer{FirstOutside: time.Now(), Name: p.Name, LastGrid: g})
-	w.l.Info("player-outside-fence", "player", p.Name, "grid", g)
+	l.Info("player-outside-fence", "grid", g)
 	err := w.pool.WithConnection(ctx, func(c *rconv2.Connection) error {
 		return c.MessagePlayer(ctx, p.Name, fmt.Sprintf(w.c.WarningMessage(), w.punishAfterSeconds.String()))
 	})
 	if err != nil {
-		w.l.Error("message-player-outside-fence", "player", p.Name, "grid", g, "error", err)
+		l.Error("message-player-outside-fence", "grid", g, "error", err)
 	}
 }
 
